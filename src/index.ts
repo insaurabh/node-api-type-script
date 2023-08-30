@@ -21,10 +21,10 @@ app.use(bodyParser.json());
 const server = http.createServer(app);
 
 server.listen(8080, () => {
-  console.log("listening on port 8000 http://localhost:8080");
+  console.log("listening on port 8080 http://localhost:8080");
 });
 
-const MONGO_URI = "mongodb://localhost:27017/node_api_typescript";
+const MONGO_URI = "mongodb://127.0.0.1:27017/node_api_typescript";
 
 mongoose.Promise = global.Promise;
 mongoose
