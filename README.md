@@ -6,10 +6,15 @@ Created for a demo purpose
    We use this mechanism to contact between two computers and transfer information
 2. Flexible
    It's not a specification, rather some suggested rules and depends on the creator.
-   For example: 1. https://api.example.com/products 2. https://example.com/api/products 3. https://api.example.com/v1/products 4. https://api.example.com/v1/getAllProducts
-   As we can see that all the above 4 API URI will return products, but the way they are structured are different and depends on the creator. ReST API doesn't depends on URI structure as there are no specification. API creator can still use any of the above 4 structure and handle on server.
+   For example:
 
-   It's suggested to use NOUN i.e. products rather then VERN getAllProducts.
+   1. https://api.example.com/products
+   2. https://example.com/api/products
+   3. https://api.example.com/v1/products
+   4. https://api.example.com/v1/getAllProducts
+      As we can see that all the above 4 API URI will return products, but the way they are structured are different and depends on the creator. ReST API doesn't depends on URI structure as there are no specification. API creator can still use any of the above 4 structure and handle on server.
+
+   It's suggested to use NOUN i.e. products rather then VERB getAllProducts.
 
 3. What are C.R.U.D?
    POST ====request====> Create
@@ -23,7 +28,7 @@ Created for a demo purpose
    A status code tells the requester about there request.
    Requester can do the next dependent things on previous API calls like when a user is registered, and server responded with 200 status code, then fire email this user.
 
-   All the status codes are grouped or we can say lavel
+   All the status codes are grouped or we can say level
    200 ====> Success
    "200": "OK",
      "201": "Created",
