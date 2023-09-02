@@ -7,6 +7,7 @@ import cors from "cors";
 
 import mongoose from "mongoose";
 const app = express();
+import router from "./routers/";
 
 app.use(
   cors({
@@ -33,3 +34,5 @@ mongoose
   .catch((err: Error) => console.info(err));
 
 mongoose.set("debug", true);
+
+app.use("/", router());
